@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name='viewport' content='width=device-width,initial-scale=1' />
+    <title>Bitches Love Things</title>
+    <style type="text/css" media="all">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #text {
+        position: fixed;
+        top: 75%;
+        width: 100%;
+        color: white;
+        background-color: #222;
+        opacity: .75;
+        font-family: Helvetica;
+        font-size: 50px;
+        text-align: center;
+      }
+
+      #image {
+        height: 100%
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="text">
+      Bitches love ...
+    </div>
+    <div id="image"></div>
+    <script type="text/javascript" charset="utf-8">
+      var width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      var $image = document.getElementById('image');
+
+      $image.innerHTML = '<img src="http://lorempixel.com/'+ width + '/' + height + '" />';
+    </script>
+  </body>
+</html>
